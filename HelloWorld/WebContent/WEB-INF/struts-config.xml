@@ -14,6 +14,8 @@
 		<action path="/hello" name="helloForm"
 			type="info.java.tips.action.HelloAction" validate="false" input="/hello.jsp">
 			<forward name="success" path="/welcome.jsp" />
+			<forward name="failure" path="/test.jsp" />
+			
 		</action>
 	</action-mappings> 
 	<message-resources

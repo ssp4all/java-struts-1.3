@@ -1,5 +1,0 @@
-INDEX VERSION 1.131+/Users/spawar2/Documents/java-struts/.metadata/.plugins/org.eclipse.jdt.core
-1476306459.index
-1233925011.index
-755435284.index
-3927879410.index

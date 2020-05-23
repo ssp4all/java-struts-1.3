@@ -1,6 +1,0 @@
-INDEX VERSION 1.4+/Users/spawar2/Documents/java-struts/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-3927879410.index
-489268783.index
-1233925011.index
-1794027906.index
-2022139481.index
