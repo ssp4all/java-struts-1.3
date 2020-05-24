@@ -32,13 +32,13 @@ public class ImgForm extends ActionForm {
 			return errors;
 		}
 
-		if (!"text/plain".equals(getFile().getContentType())) {
-			errors.add("common.file.err.ext", new ActionMessage("error.common.file.textfile.only"));
-			return errors;
-		}
+//		if (!"text/plain".equals(getFile().getContentType())) {
+//			errors.add("common.file.err.ext", new ActionMessage("error.common.file.textfile.only"));
+//			return errors;
+//		}
 
 		System.out.println(getFile().getFileSize());
-		if (getFile().getFileSize() > 10240) { // 10kb
+		if (getFile().getFileSize() > 100240) { // 10kb
 			errors.add("common.file.err.size", new ActionMessage("error.common.file.size.limit", 10240));
 			return errors;
 		}

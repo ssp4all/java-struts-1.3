@@ -49,6 +49,9 @@ public class ImgAction extends Action{
 			request.setAttribute("uploadedFilePath", newFile.getAbsoluteFile());
 			request.setAttribute("uploadedFileName", newFile.getName());
 		}
+		else {
+			return mapping.findForward("fail");
+		}
 
 		return mapping.findForward("success");
 	}
