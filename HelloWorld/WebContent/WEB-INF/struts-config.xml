@@ -9,15 +9,26 @@
 	<form-beans>
 		<form-bean name="helloForm"
 			type="info.java.tips.form.HelloForm" />
+		<form-bean name="imgForm"
+			type="info.java.tips.form.ImgForm" />
+			
 	</form-beans>
 	<action-mappings>
 		<action path="/hello" name="helloForm"
-			type="info.java.tips.action.HelloAction" validate="false" input="/hello.jsp">
+			type="info.java.tips.action.HelloAction" validate="true"
+			input="/hello.jsp">
 			<forward name="success" path="/welcome.jsp" />
-			<forward name="failure" path="/test.jsp" />
-			
+			<forward name="fail" path="/test.jsp" />
+
 		</action>
-	</action-mappings> 
+		<action path="/index" name="imgForm"
+			type="info.java.tips.action.ImgAction" validate="true"
+			input="/index.jsp">
+			<forward name="success" path="/display.jsp" />
+			<forward name="fail" path="/test.jsp" />
+
+		</action>
+	</action-mappings>
 	<message-resources
 		parameter="info.java.tips.i18n.MessageBundle" />
 </struts-config>
